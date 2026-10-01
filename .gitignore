@@ -1,4 +1,5 @@
 # Own stuff
+scripts/_local_packages/
 *.wav
 *.png
 *.pdf
