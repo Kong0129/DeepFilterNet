@@ -1,0 +1,627 @@
+{
+  "clips": 20,
+  "conditions": 300,
+  "rows": 1200,
+  "config": {
+    "selection_seed": 20261003,
+    "speakers": 20,
+    "transcript_chars": [
+      8,
+      60
+    ],
+    "duration_seconds": [
+      2.0,
+      12.0
+    ],
+    "frame_snr_thresholds_db": [
+      8.0,
+      13.0
+    ],
+    "original_mix_ratios": [
+      0.0,
+      0.251188643150958,
+      0.5011872336272722
+    ],
+    "smoothing_seconds": 0.05,
+    "input_snrs_db": [
+      -5,
+      0,
+      5,
+      10,
+      15
+    ],
+    "noise_types": [
+      "white",
+      "low_frequency",
+      "tonal"
+    ],
+    "noise_seed_base": 20261003,
+    "clean_peak": 0.3,
+    "asr_model": "small",
+    "cer_normalization": "OpenCC t2s; Arabic integers to Chinese numerals; no punctuation/spaces"
+  },
+  "gender_metadata_counts": {
+    "unspecified": 4,
+    "female_feminine": 3,
+    "male_masculine": 13
+  },
+  "source_audio_total_seconds": 108.75987499999998,
+  "clean_cer_macro": 0.23977040932923285,
+  "input_cer_macro": 0.3350277323439088,
+  "summary": {
+    "full": {
+      "conditions": 300,
+      "snr_db": 11.554419549306234,
+      "stoi": 0.8811146470782039,
+      "cer_macro": 0.39084673686879573,
+      "cer_median": 0.3,
+      "cer_gt_one_conditions": 15,
+      "cer_micro": 0.3876363636363636,
+      "rms_gain_vs_reference_db": -1.5207585745025427
+    },
+    "fixed_mix_12db": {
+      "conditions": 300,
+      "snr_db": 10.816860398650169,
+      "stoi": 0.886427399642028,
+      "cer_macro": 0.33530567172478937,
+      "cer_median": 0.25,
+      "cer_gt_one_conditions": 14,
+      "cer_micro": 0.3287272727272727,
+      "rms_gain_vs_reference_db": -0.7446144172378808
+    },
+    "q75_mix": {
+      "conditions": 300,
+      "snr_db": 11.60337181488673,
+      "stoi": 0.8870899103370522,
+      "cer_macro": 0.38123802205419854,
+      "cer_median": 0.2727272727272727,
+      "cer_gt_one_conditions": 15,
+      "cer_micro": 0.37842424242424244,
+      "rms_gain_vs_reference_db": -1.436302697262757
+    },
+    "frame_smooth_50ms": {
+      "conditions": 300,
+      "snr_db": 11.710538281997044,
+      "stoi": 0.8805374383952642,
+      "cer_macro": 0.45641467519408696,
+      "cer_median": 0.3,
+      "cer_gt_one_conditions": 21,
+      "cer_micro": 0.47006060606060607,
+      "rms_gain_vs_reference_db": -1.3970201341619637
+    }
+  },
+  "paired_comparisons": {
+    "full": {
+      "snr": {
+        "candidate_minus_baseline": 0.15611873269081117,
+        "speaker_bootstrap_95pct_ci": [
+          -0.015041954964399333,
+          0.3171078874667484
+        ],
+        "better": 148,
+        "tie": 39,
+        "worse": 113
+      },
+      "stoi": {
+        "candidate_minus_baseline": -0.0005772086829398037,
+        "speaker_bootstrap_95pct_ci": [
+          -0.0033538984471970026,
+          0.003489271042940059
+        ],
+        "better": 82,
+        "tie": 43,
+        "worse": 175
+      },
+      "cer": {
+        "candidate_minus_baseline": 0.06556793832529129,
+        "speaker_bootstrap_95pct_ci": [
+          -0.0036775860713360703,
+          0.1946309045529634
+        ],
+        "better": 31,
+        "tie": 242,
+        "worse": 27
+      }
+    },
+    "fixed_mix_12db": {
+      "snr": {
+        "candidate_minus_baseline": 0.8936778833468755,
+        "speaker_bootstrap_95pct_ci": [
+          0.506650927166144,
+          1.2748758060981826
+        ],
+        "better": 199,
+        "tie": 0,
+        "worse": 101
+      },
+      "stoi": {
+        "candidate_minus_baseline": -0.00588996124676395,
+        "speaker_bootstrap_95pct_ci": [
+          -0.017510424079230095,
+          0.0035164045077264853
+        ],
+        "better": 121,
+        "tie": 0,
+        "worse": 179
+      },
+      "cer": {
+        "candidate_minus_baseline": 0.12110900346929758,
+        "speaker_bootstrap_95pct_ci": [
+          0.040911641986825814,
+          0.25822126192162953
+        ],
+        "better": 31,
+        "tie": 161,
+        "worse": 108
+      }
+    },
+    "q75_mix": {
+      "snr": {
+        "candidate_minus_baseline": 0.10716646711031595,
+        "speaker_bootstrap_95pct_ci": [
+          -0.010179691861073167,
+          0.2242700707912444
+        ],
+        "better": 149,
+        "tie": 39,
+        "worse": 112
+      },
+      "stoi": {
+        "candidate_minus_baseline": -0.006552471941788017,
+        "speaker_bootstrap_95pct_ci": [
+          -0.011695776037311624,
+          -0.002866636539930472
+        ],
+        "better": 61,
+        "tie": 43,
+        "worse": 196
+      },
+      "cer": {
+        "candidate_minus_baseline": 0.07517665313988846,
+        "speaker_bootstrap_95pct_ci": [
+          0.003429483363858365,
+          0.2062850609153918
+        ],
+        "better": 28,
+        "tie": 231,
+        "worse": 41
+      }
+    }
+  },
+  "grouped_summary": {
+    "noise_type": {
+      "low_frequency": {
+        "full": {
+          "conditions": 100,
+          "snr_db": 10.358633136749267,
+          "stoi": 0.8529231444672191,
+          "cer_macro": 0.4156896494028846,
+          "cer_median": 0.3333333333333333,
+          "cer_gt_one_conditions": 7,
+          "cer_micro": 0.4123636363636364,
+          "rms_gain_vs_reference_db": -1.944202601350844
+        },
+        "fixed_mix_12db": {
+          "conditions": 100,
+          "snr_db": 10.119862985610961,
+          "stoi": 0.8552685256805732,
+          "cer_macro": 0.3422382805103394,
+          "cer_median": 0.2583333333333333,
+          "cer_gt_one_conditions": 7,
+          "cer_micro": 0.3367272727272727,
+          "rms_gain_vs_reference_db": -1.026410428294912
+        },
+        "q75_mix": {
+          "conditions": 100,
+          "snr_db": 10.558613222837447,
+          "stoi": 0.8601166675309746,
+          "cer_macro": 0.4044062857077563,
+          "cer_median": 0.3076923076923077,
+          "cer_gt_one_conditions": 7,
+          "cer_micro": 0.3992727272727273,
+          "rms_gain_vs_reference_db": -1.832318929489702
+        },
+        "frame_smooth_50ms": {
+          "conditions": 100,
+          "snr_db": 10.596277058124542,
+          "stoi": 0.8530175459118028,
+          "cer_macro": 0.42439761137555243,
+          "cer_median": 0.3333333333333333,
+          "cer_gt_one_conditions": 8,
+          "cer_micro": 0.42763636363636365,
+          "rms_gain_vs_reference_db": -1.794749401975423
+        }
+      },
+      "tonal": {
+        "full": {
+          "conditions": 100,
+          "snr_db": 11.184245157241822,
+          "stoi": 0.928160224002193,
+          "cer_macro": 0.2838215314097667,
+          "cer_median": 0.22727272727272727,
+          "cer_gt_one_conditions": 1,
+          "cer_micro": 0.2792727272727273,
+          "rms_gain_vs_reference_db": -1.2875185702461749
+        },
+        "fixed_mix_12db": {
+          "conditions": 100,
+          "snr_db": 10.348135790228843,
+          "stoi": 0.9443489188240338,
+          "cer_macro": 0.25984504710975304,
+          "cer_median": 0.2,
+          "cer_gt_one_conditions": 0,
+          "cer_micro": 0.2530909090909091,
+          "rms_gain_vs_reference_db": -0.5248967669090234
+        },
+        "q75_mix": {
+          "conditions": 100,
+          "snr_db": 11.120613479614258,
+          "stoi": 0.9339435850676321,
+          "cer_macro": 0.2784881980764333,
+          "cer_median": 0.2,
+          "cer_gt_one_conditions": 1,
+          "cer_micro": 0.2741818181818182,
+          "rms_gain_vs_reference_db": -1.2239874944324582
+        },
+        "frame_smooth_50ms": {
+          "conditions": 100,
+          "snr_db": 11.244839525222778,
+          "stoi": 0.9279547867953869,
+          "cer_macro": 0.27988213747037277,
+          "cer_median": 0.2,
+          "cer_gt_one_conditions": 2,
+          "cer_micro": 0.27490909090909094,
+          "rms_gain_vs_reference_db": -1.1733581163076452
+        }
+      },
+      "white": {
+        "full": {
+          "conditions": 100,
+          "snr_db": 13.120380353927612,
+          "stoi": 0.8622605727651999,
+          "cer_macro": 0.4730290297937357,
+          "cer_median": 0.3875,
+          "cer_gt_one_conditions": 7,
+          "cer_micro": 0.4712727272727273,
+          "rms_gain_vs_reference_db": -1.330554551910609
+        },
+        "fixed_mix_12db": {
+          "conditions": 100,
+          "snr_db": 11.982582420110703,
+          "stoi": 0.8596647544214777,
+          "cer_macro": 0.40383368755427584,
+          "cer_median": 0.3038461538461539,
+          "cer_gt_one_conditions": 7,
+          "cer_micro": 0.39636363636363636,
+          "rms_gain_vs_reference_db": -0.6825360565097072
+        },
+        "q75_mix": {
+          "conditions": 100,
+          "snr_db": 13.13088874220848,
+          "stoi": 0.8672094784125496,
+          "cer_macro": 0.460819582378406,
+          "cer_median": 0.3582887700534759,
+          "cer_gt_one_conditions": 7,
+          "cer_micro": 0.4618181818181818,
+          "rms_gain_vs_reference_db": -1.2526016678661107
+        },
+        "frame_smooth_50ms": {
+          "conditions": 100,
+          "snr_db": 13.290498262643814,
+          "stoi": 0.8606399824786025,
+          "cer_macro": 0.6649642767363355,
+          "cer_median": 0.3582887700534759,
+          "cer_gt_one_conditions": 11,
+          "cer_micro": 0.7076363636363636,
+          "rms_gain_vs_reference_db": -1.222952884202823
+        }
+      }
+    },
+    "target_snr_db": {
+      "-5": {
+        "full": {
+          "conditions": 60,
+          "snr_db": 7.849457154671351,
+          "stoi": 0.8130047123473186,
+          "cer_macro": 0.5607835206732265,
+          "cer_median": 0.5166666666666666,
+          "cer_gt_one_conditions": 6,
+          "cer_micro": 0.566060606060606,
+          "rms_gain_vs_reference_db": -1.8724955512055506
+        },
+        "fixed_mix_12db": {
+          "conditions": 60,
+          "snr_db": 4.473972385128339,
+          "stoi": 0.796668498439038,
+          "cer_macro": 0.4621431768122945,
+          "cer_median": 0.3333333333333333,
+          "cer_gt_one_conditions": 2,
+          "cer_micro": 0.463030303030303,
+          "rms_gain_vs_reference_db": -0.1312797646096442
+        },
+        "q75_mix": {
+          "conditions": 60,
+          "snr_db": 7.849457154671351,
+          "stoi": 0.8130047123473186,
+          "cer_macro": 0.5607835206732265,
+          "cer_median": 0.5166666666666666,
+          "cer_gt_one_conditions": 6,
+          "cer_micro": 0.566060606060606,
+          "rms_gain_vs_reference_db": -1.8724955512055506
+        },
+        "frame_smooth_50ms": {
+          "conditions": 60,
+          "snr_db": 7.826917956272761,
+          "stoi": 0.8127136663055589,
+          "cer_macro": 0.5906535349182408,
+          "cer_median": 0.5333333333333333,
+          "cer_gt_one_conditions": 7,
+          "cer_micro": 0.6024242424242424,
+          "rms_gain_vs_reference_db": -1.8572826127056032
+        }
+      },
+      "0": {
+        "full": {
+          "conditions": 60,
+          "snr_db": 9.904069145520529,
+          "stoi": 0.8602187594099093,
+          "cer_macro": 0.4239245218289336,
+          "cer_median": 0.3568181818181818,
+          "cer_gt_one_conditions": 1,
+          "cer_micro": 0.4206060606060606,
+          "rms_gain_vs_reference_db": -1.5965222294131916
+        },
+        "fixed_mix_12db": {
+          "conditions": 60,
+          "snr_db": 8.206910590330759,
+          "stoi": 0.8557440260913326,
+          "cer_macro": 0.37145758653111594,
+          "cer_median": 0.2583333333333333,
+          "cer_gt_one_conditions": 4,
+          "cer_micro": 0.36,
+          "rms_gain_vs_reference_db": -0.7415737022044292
+        },
+        "q75_mix": {
+          "conditions": 60,
+          "snr_db": 9.904069145520529,
+          "stoi": 0.8602187594099093,
+          "cer_macro": 0.4239245218289336,
+          "cer_median": 0.3568181818181818,
+          "cer_gt_one_conditions": 1,
+          "cer_micro": 0.4206060606060606,
+          "rms_gain_vs_reference_db": -1.5965222294131916
+        },
+        "frame_smooth_50ms": {
+          "conditions": 60,
+          "snr_db": 9.863239079713821,
+          "stoi": 0.8592395066534472,
+          "cer_macro": 0.7394596797537974,
+          "cer_median": 0.3416666666666667,
+          "cer_gt_one_conditions": 4,
+          "cer_micro": 0.8084848484848485,
+          "rms_gain_vs_reference_db": -1.5475786458070313
+        }
+      },
+      "5": {
+        "full": {
+          "conditions": 60,
+          "snr_db": 11.714737951755524,
+          "stoi": 0.8924941451064963,
+          "cer_macro": 0.36052018515253803,
+          "cer_median": 0.26969696969696966,
+          "cer_gt_one_conditions": 3,
+          "cer_micro": 0.3575757575757576,
+          "rms_gain_vs_reference_db": -1.4584305612370372
+        },
+        "fixed_mix_12db": {
+          "conditions": 60,
+          "snr_db": 11.355486065149307,
+          "stoi": 0.8992952348372106,
+          "cer_macro": 0.30028743859626217,
+          "cer_median": 0.21363636363636362,
+          "cer_gt_one_conditions": 4,
+          "cer_micro": 0.2884848484848485,
+          "rms_gain_vs_reference_db": -0.9317998720024055
+        },
+        "q75_mix": {
+          "conditions": 60,
+          "snr_db": 11.666892210642496,
+          "stoi": 0.8932368793229233,
+          "cer_macro": 0.35644611107846397,
+          "cer_median": 0.26666666666666666,
+          "cer_gt_one_conditions": 3,
+          "cer_micro": 0.3527272727272727,
+          "rms_gain_vs_reference_db": -1.438973509726111
+        },
+        "frame_smooth_50ms": {
+          "conditions": 60,
+          "snr_db": 11.65665634473165,
+          "stoi": 0.8896883863888243,
+          "cer_macro": 0.3451865631645043,
+          "cer_median": 0.26969696969696966,
+          "cer_gt_one_conditions": 4,
+          "cer_micro": 0.3418181818181818,
+          "rms_gain_vs_reference_db": -1.3443993541101615
+        }
+      },
+      "10": {
+        "full": {
+          "conditions": 60,
+          "snr_db": 13.394240846236547,
+          "stoi": 0.9125093744654547,
+          "cer_macro": 0.31221718912895385,
+          "cer_median": 0.22727272727272727,
+          "cer_gt_one_conditions": 3,
+          "cer_micro": 0.30666666666666664,
+          "rms_gain_vs_reference_db": -1.3644390624637406
+        },
+        "fixed_mix_12db": {
+          "conditions": 60,
+          "snr_db": 13.954819271961847,
+          "stoi": 0.929638473597025,
+          "cer_macro": 0.2687522431272431,
+          "cer_median": 0.2,
+          "cer_gt_one_conditions": 2,
+          "cer_micro": 0.26545454545454544,
+          "rms_gain_vs_reference_db": -0.962657030671835
+        },
+        "q75_mix": {
+          "conditions": 60,
+          "snr_db": 13.269332855939865,
+          "stoi": 0.9214131459806552,
+          "cer_macro": 0.29041669115198526,
+          "cer_median": 0.21363636363636362,
+          "cer_gt_one_conditions": 3,
+          "cer_micro": 0.28606060606060607,
+          "rms_gain_vs_reference_db": -1.2315312080124083
+        },
+        "frame_smooth_50ms": {
+          "conditions": 60,
+          "snr_db": 13.562041461467743,
+          "stoi": 0.9112298139295772,
+          "cer_macro": 0.31399231215407686,
+          "cer_median": 0.21363636363636362,
+          "cer_gt_one_conditions": 3,
+          "cer_micro": 0.3115151515151515,
+          "rms_gain_vs_reference_db": -1.1792824940445523
+        }
+      },
+      "15": {
+        "full": {
+          "conditions": 60,
+          "snr_db": 14.90959264834722,
+          "stoi": 0.9273462440618407,
+          "cer_macro": 0.2967882675603264,
+          "cer_median": 0.2403846153846154,
+          "cer_gt_one_conditions": 2,
+          "cer_micro": 0.2872727272727273,
+          "rms_gain_vs_reference_db": -1.3119054681931932
+        },
+        "fixed_mix_12db": {
+          "conditions": 60,
+          "snr_db": 16.09311368068059,
+          "stoi": 0.9507907652455343,
+          "cer_macro": 0.2738879135570312,
+          "cer_median": 0.2,
+          "cer_gt_one_conditions": 2,
+          "cer_micro": 0.26666666666666666,
+          "rms_gain_vs_reference_db": -0.9557617167010903
+        },
+        "q75_mix": {
+          "conditions": 60,
+          "snr_db": 15.327107707659403,
+          "stoi": 0.9475760546244543,
+          "cer_macro": 0.2746192655383831,
+          "cer_median": 0.2,
+          "cer_gt_one_conditions": 2,
+          "cer_micro": 0.26666666666666666,
+          "rms_gain_vs_reference_db": -1.041990987956524
+        },
+        "frame_smooth_50ms": {
+          "conditions": 60,
+          "snr_db": 15.64383656779925,
+          "stoi": 0.9298158186989133,
+          "cer_macro": 0.29278128597981534,
+          "cer_median": 0.229020979020979,
+          "cer_gt_one_conditions": 3,
+          "cer_micro": 0.28606060606060607,
+          "rms_gain_vs_reference_db": -1.0565575641424705
+        }
+      }
+    }
+  },
+  "posthoc_sensitivity": {
+    "diagnostic_case": {
+      "clip_path": "common_voice_zh-CN_38379952.mp3",
+      "noise_type": "white",
+      "target_snr_db": "0",
+      "frame_cer": 19.529411764705884,
+      "reference_text": "但他的重点工作还是推行乡村治理工作。",
+      "output_asr_text": "但我們才會把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把我們把"
+    },
+    "without_same_one_condition_all_strategies": {
+      "full": {
+        "conditions": 299,
+        "snr_db": 11.547441187510922,
+        "stoi": 0.8814242665456934,
+        "cer_macro": 0.3890061691974932,
+        "cer_median": 0.3,
+        "cer_gt_one_conditions": 15,
+        "cer_micro": 0.3853456669912366,
+        "rms_gain_vs_reference_db": -1.523431086317826
+      },
+      "fixed_mix_12db": {
+        "conditions": 299,
+        "snr_db": 10.818795225891382,
+        "stoi": 0.8869535988495196,
+        "cer_macro": 0.33347608219485064,
+        "cer_median": 0.25,
+        "cer_gt_one_conditions": 14,
+        "cer_micro": 0.32643622200584227,
+        "rms_gain_vs_reference_db": -0.7463529491158861
+      },
+      "q75_mix": {
+        "conditions": 299,
+        "snr_db": 11.596557173043191,
+        "stoi": 0.8874195139625982,
+        "cer_macro": 0.3793653182129476,
+        "cer_median": 0.2727272727272727,
+        "cer_gt_one_conditions": 15,
+        "cer_micro": 0.376095423563778,
+        "rms_gain_vs_reference_db": -1.4386927479501483
+      },
+      "frame_smooth_50ms": {
+        "conditions": 299,
+        "snr_db": 11.704314889317772,
+        "stoi": 0.8808637683002567,
+        "cer_macro": 0.39262538726929835,
+        "cer_median": 0.3,
+        "cer_gt_one_conditions": 20,
+        "cer_micro": 0.3911879259980526,
+        "rms_gain_vs_reference_db": -1.399336329003894
+      }
+    },
+    "without_same_one_speaker_all_strategies": {
+      "full": {
+        "conditions": 285,
+        "snr_db": 11.592148574820737,
+        "stoi": 0.8815138894019049,
+        "cer_macro": 0.3819026538763381,
+        "cer_median": 0.3,
+        "cer_gt_one_conditions": 15,
+        "cer_micro": 0.37622739018087853,
+        "rms_gain_vs_reference_db": -1.505655367695318
+      },
+      "fixed_mix_12db": {
+        "conditions": 285,
+        "snr_db": 10.833321100787112,
+        "stoi": 0.888444936423242,
+        "cer_macro": 0.3283919351489011,
+        "cer_median": 0.25,
+        "cer_gt_one_conditions": 13,
+        "cer_micro": 0.31963824289405685,
+        "rms_gain_vs_reference_db": -0.7367411430418941
+      },
+      "q75_mix": {
+        "conditions": 285,
+        "snr_db": 11.62773910635396,
+        "stoi": 0.8878665795723402,
+        "cer_macro": 0.37240741227583335,
+        "cer_median": 0.2727272727272727,
+        "cer_gt_one_conditions": 15,
+        "cer_micro": 0.3671834625322997,
+        "rms_gain_vs_reference_db": -1.420754113063052
+      },
+      "frame_smooth_50ms": {
+        "conditions": 285,
+        "snr_db": 11.73582304046865,
+        "stoi": 0.8812506773986121,
+        "cer_macro": 0.38611245479666534,
+        "cer_median": 0.2777777777777778,
+        "cer_gt_one_conditions": 19,
+        "cer_micro": 0.3829457364341085,
+        "rms_gain_vs_reference_db": -1.3835559885554718
+      }
+    }
+  }
+}

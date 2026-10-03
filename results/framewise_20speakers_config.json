@@ -1,0 +1,40 @@
+{
+  "selection_seed": 20261003,
+  "speakers": 20,
+  "transcript_chars": [
+    8,
+    60
+  ],
+  "duration_seconds": [
+    2.0,
+    12.0
+  ],
+  "frame_snr_thresholds_db": [
+    8.0,
+    13.0
+  ],
+  "original_mix_ratios": [
+    0.0,
+    0.251188643150958,
+    0.5011872336272722
+  ],
+  "smoothing_seconds": 0.05,
+  "input_snrs_db": [
+    -5,
+    0,
+    5,
+    10,
+    15
+  ],
+  "noise_types": [
+    "white",
+    "low_frequency",
+    "tonal"
+  ],
+  "noise_seed_base": 20261003,
+  "clean_peak": 0.3,
+  "asr_model": "small",
+  "cer_normalization": "OpenCC t2s; Arabic integers to Chinese numerals; no punctuation/spaces",
+  "skip_asr": false,
+  "limit_cases": 0
+}
