@@ -1,0 +1,292 @@
+{
+  "conditions": 300,
+  "speakers": 20,
+  "summary": {
+    "full": {
+      "output_snr_db": 11.554424611727397,
+      "output_stoi": 0.8811145765627392
+    },
+    "fixed_mix_12db": {
+      "output_snr_db": 10.816866106788318,
+      "output_stoi": 0.8864274692765017
+    },
+    "q75_mix": {
+      "output_snr_db": 11.603377030293148,
+      "output_stoi": 0.8870899330424231
+    },
+    "frame_smooth_50ms": {
+      "output_snr_db": 11.71054412126541,
+      "output_stoi": 0.8805373648028031
+    },
+    "erb_frame_50ms": {
+      "output_snr_db": 11.65152445435524,
+      "output_stoi": 0.8815001421204931
+    },
+    "erb_fixed12_50ms": {
+      "output_snr_db": 11.71690405011177,
+      "output_stoi": 0.8872483975749876
+    }
+  },
+  "by_noise": {
+    "white": {
+      "full": {
+        "output_snr_db": 13.120383489131928,
+        "output_stoi": 0.8622610133826539
+      },
+      "fixed_mix_12db": {
+        "output_snr_db": 11.982587373256683,
+        "output_stoi": 0.8596648406308628
+      },
+      "q75_mix": {
+        "output_snr_db": 13.130893331766128,
+        "output_stoi": 0.8672100259321709
+      },
+      "frame_smooth_50ms": {
+        "output_snr_db": 13.290502923727036,
+        "output_stoi": 0.8606403558678132
+      },
+      "erb_frame_50ms": {
+        "output_snr_db": 13.267965179681777,
+        "output_stoi": 0.8626286973953998
+      },
+      "erb_fixed12_50ms": {
+        "output_snr_db": 13.475185716152192,
+        "output_stoi": 0.8652668733895585
+      }
+    },
+    "low_frequency": {
+      "full": {
+        "output_snr_db": 10.358643388748169,
+        "output_stoi": 0.8529228260871123
+      },
+      "fixed_mix_12db": {
+        "output_snr_db": 10.119873440265655,
+        "output_stoi": 0.8552686452823194
+      },
+      "q75_mix": {
+        "output_snr_db": 10.558624577522277,
+        "output_stoi": 0.8601165782552336
+      },
+      "frame_smooth_50ms": {
+        "output_snr_db": 10.596288031339645,
+        "output_stoi": 0.8530172089741999
+      },
+      "erb_frame_50ms": {
+        "output_snr_db": 10.46344188451767,
+        "output_stoi": 0.8535945017324478
+      },
+      "erb_fixed12_50ms": {
+        "output_snr_db": 10.523262721300124,
+        "output_stoi": 0.8589037571868634
+      }
+    },
+    "tonal": {
+      "full": {
+        "output_snr_db": 11.184246957302094,
+        "output_stoi": 0.9281598902184511
+      },
+      "fixed_mix_12db": {
+        "output_snr_db": 10.348137506842614,
+        "output_stoi": 0.9443489219163237
+      },
+      "q75_mix": {
+        "output_snr_db": 11.120613181591034,
+        "output_stoi": 0.9339431949398653
+      },
+      "frame_smooth_50ms": {
+        "output_snr_db": 11.244841408729553,
+        "output_stoi": 0.9279545295663963
+      },
+      "erb_frame_50ms": {
+        "output_snr_db": 11.223166298866271,
+        "output_stoi": 0.9282772272336318
+      },
+      "erb_fixed12_50ms": {
+        "output_snr_db": 11.152263712882995,
+        "output_stoi": 0.9375745621485413
+      }
+    }
+  },
+  "paired": {
+    "erb_frame_50ms": {
+      "full": {
+        "output_snr_db": {
+          "delta": 0.09709984262784323,
+          "speaker_bootstrap_95pct_ci": [
+            0.07125378747781116,
+            0.1253050810098648
+          ],
+          "better": 202,
+          "tie": 39,
+          "worse": 59
+        },
+        "output_stoi": {
+          "delta": 0.0003855655577538556,
+          "speaker_bootstrap_95pct_ci": [
+            -0.00043292815132433995,
+            0.0015988399217483952
+          ],
+          "better": 140,
+          "tie": 44,
+          "worse": 116
+        }
+      },
+      "fixed_mix_12db": {
+        "output_snr_db": {
+          "delta": 0.8346583475669224,
+          "speaker_bootstrap_95pct_ci": [
+            0.3678981442004442,
+            1.334127051606774
+          ],
+          "better": 188,
+          "tie": 0,
+          "worse": 112
+        },
+        "output_stoi": {
+          "delta": -0.004927327156008791,
+          "speaker_bootstrap_95pct_ci": [
+            -0.01802951788958841,
+            0.0059449406391900725
+          ],
+          "better": 156,
+          "tie": 0,
+          "worse": 144
+        }
+      },
+      "q75_mix": {
+        "output_snr_db": {
+          "delta": 0.04814742406209309,
+          "speaker_bootstrap_95pct_ci": [
+            -0.19120733529329303,
+            0.2892494501670201
+          ],
+          "better": 170,
+          "tie": 39,
+          "worse": 91
+        },
+        "output_stoi": {
+          "delta": -0.005589790921930289,
+          "speaker_bootstrap_95pct_ci": [
+            -0.011819045638881592,
+            -0.0008292317005955371
+          ],
+          "better": 120,
+          "tie": 44,
+          "worse": 136
+        }
+      },
+      "frame_smooth_50ms": {
+        "output_snr_db": {
+          "delta": -0.05901966691017152,
+          "speaker_bootstrap_95pct_ci": [
+            -0.19762269765138626,
+            0.09125789155562711
+          ],
+          "better": 119,
+          "tie": 39,
+          "worse": 142
+        },
+        "output_stoi": {
+          "delta": 0.0009627773176899337,
+          "speaker_bootstrap_95pct_ci": [
+            -0.001799492871411722,
+            0.0029518974859635326
+          ],
+          "better": 188,
+          "tie": 44,
+          "worse": 68
+        }
+      }
+    },
+    "erb_fixed12_50ms": {
+      "full": {
+        "output_snr_db": {
+          "delta": 0.162479438384374,
+          "speaker_bootstrap_95pct_ci": [
+            0.07586396711568037,
+            0.24341395184397693
+          ],
+          "better": 213,
+          "tie": 0,
+          "worse": 87
+        },
+        "output_stoi": {
+          "delta": 0.006133821012248469,
+          "speaker_bootstrap_95pct_ci": [
+            -0.00034925419421680314,
+            0.015337426385034509
+          ],
+          "better": 165,
+          "tie": 0,
+          "worse": 135
+        }
+      },
+      "fixed_mix_12db": {
+        "output_snr_db": {
+          "delta": 0.9000379433234533,
+          "speaker_bootstrap_95pct_ci": [
+            0.5071777025361855,
+            1.3219223911066846
+          ],
+          "better": 192,
+          "tie": 0,
+          "worse": 108
+        },
+        "output_stoi": {
+          "delta": 0.0008209282984858203,
+          "speaker_bootstrap_95pct_ci": [
+            -0.005993626354315448,
+            0.006262128205446252
+          ],
+          "better": 170,
+          "tie": 0,
+          "worse": 130
+        }
+      },
+      "q75_mix": {
+        "output_snr_db": {
+          "delta": 0.11352701981862387,
+          "speaker_bootstrap_95pct_ci": [
+            -0.09335061617195607,
+            0.30754682774345066
+          ],
+          "better": 187,
+          "tie": 0,
+          "worse": 113
+        },
+        "output_stoi": {
+          "delta": 0.00015846453256432427,
+          "speaker_bootstrap_95pct_ci": [
+            -0.0035295521883588208,
+            0.004469562054884953
+          ],
+          "better": 135,
+          "tie": 0,
+          "worse": 165
+        }
+      },
+      "frame_smooth_50ms": {
+        "output_snr_db": {
+          "delta": 0.006359928846359249,
+          "speaker_bootstrap_95pct_ci": [
+            -0.11460126258432865,
+            0.11716948926448817
+          ],
+          "better": 172,
+          "tie": 0,
+          "worse": 128
+        },
+        "output_stoi": {
+          "delta": 0.006711032772184546,
+          "speaker_bootstrap_95pct_ci": [
+            0.0010669967974059385,
+            0.01531798489624524
+          ],
+          "better": 191,
+          "tie": 0,
+          "worse": 109
+        }
+      }
+    }
+  }
+}

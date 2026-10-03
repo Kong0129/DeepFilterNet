@@ -1,0 +1,36 @@
+{
+  "gamma": 1.0,
+  "smoothing_seconds": 0.05,
+  "frame_thresholds": [
+    8,
+    13
+  ],
+  "noise_types": [
+    "white",
+    "low_frequency",
+    "tonal"
+  ],
+  "input_snrs": [
+    -5,
+    0,
+    5,
+    10,
+    15
+  ],
+  "clean_peak": 0.3,
+  "asr": false,
+  "selection_seed": 20261003,
+  "heldout_speakers": 12,
+  "candidates": [
+    "full",
+    "fixed_mix_12db",
+    "q75_mix",
+    "frame_smooth_50ms",
+    "erb_frame_50ms",
+    "erb_fixed12_50ms"
+  ],
+  "heldout": false,
+  "limit": 0,
+  "speakers": 20,
+  "manifest": "framewise_20speakers_manifest.csv"
+}
